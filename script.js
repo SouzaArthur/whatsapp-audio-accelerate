@@ -3,7 +3,7 @@ accelerationButton.innerHTML = "2x"
 
 accelerationButton.classList.add("button-acceleration");
 
-//Div to put the button
+//Setting the button into a div, after the div loads on the page
 let interval = setInterval(()=>{
     let buttonLocation = document.querySelector("._3All_._3NrAe");
     if(buttonLocation){
@@ -12,6 +12,7 @@ let interval = setInterval(()=>{
     }
 },1000);
 
+//When the button is clicked, all the audios on whatsapp is accelerated twice
 accelerationButton.addEventListener("click", function(){
     console.log("clicked")
     let audios = document.querySelectorAll("audio");
